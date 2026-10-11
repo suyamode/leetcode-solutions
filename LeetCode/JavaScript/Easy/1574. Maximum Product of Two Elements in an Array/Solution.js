@@ -3,9 +3,21 @@
  * @return {number}
  */
 var maxProduct = function(nums) {
- const sorted=[...nums].sort((a,b)=>a-b);
- const len=sorted.length;
- return ((sorted[len-1]-1)*(sorted[len-2]-1))
+  
+let max1=0
+let max2=0;
+for(for num of nums){
+    if(num>max1){
+        max1=max2;
+        max1=num;
+        
+    }
+    else if(num>max2){
+        max1=max2;
+        max2=num
 
+    }
+}
+return (max1-1)*(max2-1);
     
 };
