@@ -6,7 +6,7 @@ var maxProduct = function(nums) {
   
 let max1=0
 let max2=0;
-for(for num of nums){
+for(let num of nums){
     if(num>max1){
         max1=max2;
         max1=num;
