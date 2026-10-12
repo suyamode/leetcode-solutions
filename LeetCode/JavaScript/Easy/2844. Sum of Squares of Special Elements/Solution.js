@@ -1,6 +1,13 @@
  var sumOfSquares = function(nums) {
+    let sum = 0;
     const n = nums.length;
-    return nums.reduce((sum, num, index) => {
-        return n % (index + 1) === 0 ? sum + num ** 2 : sum;
-    }, 0);
+
+    for (let i = 0; i < n; i++) {
+        // Check if the 1-based position divides n evenly
+        if (n % (i + 1) === 0) {
+            sum += nums[i] ** 2;
+        }
+    }
+
+    return sum;
 };
