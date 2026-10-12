@@ -1,13 +1,6 @@
-/**
- * @param {number[]} nums
- * @return {number}
- */
-var sumOfSquares = function(nums) {
-    let sum=0;
-    for(let i=0;i<nums.length;i++){
-        if(nums.length%(i+1)===0)
-         sum=sum+nums[i]*nums[i];
-    }
-    return sum;
-    
+ var sumOfSquares = function(nums) {
+    const n = nums.length;
+    return nums.reduce((sum, num, index) => {
+        return n % (index + 1) === 0 ? sum + num ** 2 : sum;
+    }, 0);
 };
