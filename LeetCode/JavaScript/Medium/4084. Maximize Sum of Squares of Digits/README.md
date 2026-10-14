@@ -8,8 +8,8 @@
 Math, Greedy
 
 ### 🚀 Performance
-- **Runtime:** 219 ms
-- **Memory:** 81.5 MB
+- **Runtime:** 221 ms
+- **Memory:** 81.8 MB
 
 ---
 
