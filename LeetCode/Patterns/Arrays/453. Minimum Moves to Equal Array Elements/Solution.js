@@ -10,4 +10,4 @@ var minMoves = function(nums) {
     }
     return moves;
 };
-console.log(minMoves([1,]));
+console.log(minMoves([1,1,1]));
